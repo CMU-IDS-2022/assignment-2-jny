@@ -189,7 +189,7 @@ st.text("(Autumn season data is missing from the original datadet)")
 st.text("\n")
 
 st.text("\n")
-st.text("Latitude (degrees) and Max Temperature (fahrenheit)")
+st.text("Latitude (degrees) and Min Temperature (fahrenheit)")
 
 # draw the correlation scatterplot and transform regression of latitude and tmax
 scatter1=alt.Chart(dfWeather[seasons_membership]).mark_circle(size=2).encode(
@@ -229,7 +229,7 @@ scatter1.add_selection(selection).encode(
 
 ##############################################################################
 st.text("\n")
-st.text("Elevation (meters) and Max Temperature (fahrenheit)")
+st.text("Elevation (meters) and Min Temperature (fahrenheit)")
 
 # draw the correlation scatterplot and transform regression of elevation and tmax
 scatter2=alt.Chart(dfWeather[seasons_membership]).mark_circle(size=2).encode(
