@@ -116,7 +116,7 @@ zone_membership2 = get_zone_membership2(dfWeather, zone_multisel)
 
 # Logic for colour coding the graph 
 if displayBy == 'Climate Zone':
-    colourSel = scale=alt.Scale(scheme = 'set3'))
+    colourSel = scale=alt.Scale(scheme = 'set3')
 else:
     colourSel = 'Elevation'
 
