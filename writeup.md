@@ -20,13 +20,13 @@ TODO: **A rationale for your design decisions.** How did you choose your particu
 
 This exploration focused on two types of visual encodings to best help us answer our guiding question. In the first section of this Streamlit app, we focused on the visualising the bigger picture, particularly through the use of maps with location-based information layered on top. This visualisation method is useful to understand how location (latitude and longitude) plays a role in the weather/climate. Aside from maps, we also used a chart to visualise the full set of data for the entire 2017 year. 
 
-In the second section of this study, we focus on __(enter chart type)__ ................... to find correlation ..........
+In the second section of this study, we focus on scatterplots and histograms to find possible correlation between 6 climate factors: latitude, longtitude, precipitation, snowfall, elevation and minimun temperature. We start by plotting a matrix and find out 3 most obvious correalations: latitude & minimum temperature, elevation & temperature and elevation & precipitation. We can filter by seasons in this section although the autumn season data is missing. Then we display a larger scatterplot with a polyline regression summarizing the correlation and create a multiselect interaction between the scatterplot and histogram identifying climate stations within selection.
 
 ## Development
 
 TODO: **An overview of your development process.** Describe how the work was split among the team members. Include a commentary on the development process, including answers to the following questions: Roughly how much time did you spend developing your application (in people-hours)? What aspects took the most time?
 
-Before splitting any work, we met together to discuss which dataset to use, what our goals are, and what questions we are interested in focusing on. After an initial look through the weather dataset, we discussed ways we can visualise the data and concluded with the two types of visual encodings as mentioned above. The first section about the big picture visualisations (maps and annual chart) was completed by Jamie Ho. The second section about the __(insert text)__ was completed by Yi Zhou. 
+Before splitting any work, we met together to discuss which dataset to use, what our goals are, and what questions we are interested in focusing on. After an initial look through the weather dataset, we discussed ways we can visualise the data and concluded with the two types of visual encodings as mentioned above. The first section about the big picture visualisations (maps and annual chart) was completed by Jamie Ho. The second section about the more detailed analysis on climate factor correlations (matrix, scatterplot and histograms) was completed by Yi Zhou. 
 
 In addition to the data visualisation, adding Climate Zones to the dataset and cleaning the data was necessary. The following actions were done on the weather dataset provided by the NOAA Daily Global Historial Climatology Network:
   - Filter for only the data in the state of California
