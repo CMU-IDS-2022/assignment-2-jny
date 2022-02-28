@@ -185,8 +185,11 @@ seasons = dfWeather['Season'].sort_values(ascending=True)
 seasons_multisel = st.multiselect("Please select/deselect seasons:", 
                                seasons.unique(), default=seasons.unique())
 seasons_membership = get_season_membership(dfWeather, seasons_multisel)
-st.text("(Autumn season data is missing from the orinigal datadet)")
+st.text("(Autumn season data is missing from the original datadet)")
 st.text("\n")
+
+st.text("\n")
+st.text("Latitude (degrees) and Max Temperature (fahrenheit)")
 
 # draw the correlation scatterplot and transform regression of latitude and tmax
 scatter1=alt.Chart(dfWeather[seasons_membership]).mark_circle(size=2).encode(
@@ -225,6 +228,9 @@ scatter1.add_selection(selection).encode(
 ).transform_filter(selection)
 
 ##############################################################################
+st.text("\n")
+st.text("Elevation (meters) and Max Temperature (fahrenheit)")
+
 # draw the correlation scatterplot and transform regression of elevation and tmax
 scatter2=alt.Chart(dfWeather[seasons_membership]).mark_circle(size=2).encode(
     x=alt.X('Elevation',scale=alt.Scale(zero=False)),
@@ -263,6 +269,9 @@ scatter2.add_selection(selection2).encode(
 
 
 ##############################################################################
+st.text("\n")
+st.text("Elevation (meters) and Precipitation (inches)")
+
 # draw the correlation scatterplot and transform regression of elevation and precipitation
 scatter4=alt.Chart(dfWeather[seasons_membership]).mark_circle(size=2).encode(
     x=alt.X('Elevation',scale=alt.Scale(zero=False)),
