@@ -3,7 +3,8 @@
 ![A screenshot of your application. Could be a GIF.](screenshot.png)
 
 **Abstract**
-Using NOAA Daily Historical Climatology Network 2017 dataset of daily weather, this app focus on the daily and seasonal climate trends in 16 California climate zones. The first section mappes the geology and the bigger picture of temperature sort by climate zones and elevtation.  The second section focuses on the correlation inbetween major climate factors where seasonal trends can be visualized.  
+
+Using NOAA Daily Historical Climatology Network 2017 dataset of daily weather, this app focus on the daily and seasonal climate trends in 16 California climate zones (more info here: https://www.pge.com/includes/docs/pdfs/about/edusafety/training/pec/toolbox/arch/climate/california_climate_zones_01-16.pdf). The first section mappes the geology and the bigger picture of temperature sort by climate zones and elevtation.  The second section focuses on the correlation inbetween major climate factors where seasonal trends can be visualized.  
 
 ## Project Goals
 California is a large state that spans both east-west and north-south. As a result, California has 16 different climate zones under the building code. When designing the built environment, it is crucial to design based on the local climate to ensure the comfort of the people in that environment. Architects, engineers, and developers must not ignore the differences in the climate and treat California as one climate zone. Therefore, this Streamlit app is an exploration to investigate the question of: **What are the differences amongst the 16 different climate zones?** This guiding question will help us explore the trends that distinguish each climate zone, and which variables are correlated with each other that helps to identify a climate zone.
@@ -32,6 +33,7 @@ Roughly we spent 3 full days developing our application. Aspects that took the m
 From each visualisation, we were able to extract some insights:
 
 _The Maps:_
+   - County borders and climate zone borders don't necessarily match; some climate zones include multiple counties, whereas some counties are split between two climate zones
    - Weather stations in Climate Zone 16 tend to be in areas of high elevation of approximately 1000 metres or more
    - Most weather stations in other Climate Zones tend to be in low elevation, particularly along the coastline of California
 
