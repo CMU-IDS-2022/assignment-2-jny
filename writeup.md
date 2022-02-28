@@ -5,6 +5,7 @@
 TODO: Update screenshot
 
 TODO: Short abstract describing the main goals and how you achieved them.
+Using NOAA Daily Historical Climatology Network 2017 dataset of daily weather, this app focus on the daily and seasonal climate trends in 16 California climate zones. The first section mappes the geology and the bigger picture of temperature sort by climate zones and elevtation.  The second section focuses on the correlation inbetween major climate factors where seasonal trends can be visualized.  
 
 ## Project Goals
 
