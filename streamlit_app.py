@@ -12,7 +12,7 @@ def load_data():
 
 
 # load the data
-st.title("The Differences of Weather and Climate in California")
+st.title("California's 16 Different Climate Zones")
 with st.spinner(text="Loading data..."):
     dfStations, dfWeather = load_data()
     # dfStations
@@ -76,8 +76,7 @@ stations_map = (
     alt.Chart(dfStations[zone_membership]).mark_point().encode(
               latitude='Latitude',
               longitude='Longitude',
-              color=alt.Color('Climate Zone:O', scale=alt.
-                              Scale(scheme = 'dark2')),
+              color=alt.Color('Climate Zone:O', scale=alt.Scale(scheme = 'set3')),
               tooltip=['Station', 'Latitude', 'Longitude', 'Elevation', 
                        'Climate Zone']
     )
@@ -117,7 +116,7 @@ zone_membership2 = get_zone_membership2(dfWeather, zone_multisel)
 
 # Logic for colour coding the graph 
 if displayBy == 'Climate Zone':
-    colourSel = 'Climate Zone:O'
+    colourSel = scale=alt.Scale(scheme = 'set3'))
 else:
     colourSel = 'Elevation'
 
