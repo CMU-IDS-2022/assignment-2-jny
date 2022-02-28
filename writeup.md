@@ -33,16 +33,20 @@ Roughly we spent 3 full days developing our application. Aspects that took the m
 
 ## Success Story
 From each visualisation, we were able to extract some insights:
+
 _The Maps:_
    - Weather stations in Climate Zone 16 tend to be in areas of high elevation of approximately 1000 metres or more
    - Most weather stations in other Climate Zones tend to be in low elevation, particularly along the coastline of California
+
 _The Annual Minimum Temperature Graph (by Climate Zone):_
    - In general, mid-June to September are the warmest months throughout the entire state of California
    - During the summer months, the range of minimum temperatures range vastly, from lowest of 20°F in Climate Zone 16 to highest of 95°F in Climate Zone 15
    - Climate Zone 16 typically has the lowest temperatures throughout the year, whereas Climate Zone 15 tends to have the highest temperatures throughout the year
+
 _The Annual Minimum Temperature Graph (by Elevation):_
    - Elevation is correlated with temperature, where higher elevation tends to have lower minimum temperatures, which is consistent throughout the year
    - Regardless of the elevation, there is significant fluctuation in temperatures within a month (e.g., temperatures decreased then increased again in May)
+
 _The 6x6 Matrix for Correlations:_
    - Areas in the east of California (longitude closer to -115°) tend to have higher minimum temperatures
    - Areas in the south of California (latitude closer to 30°) tend to have higher minimum temperatures
@@ -50,12 +54,15 @@ _The 6x6 Matrix for Correlations:_
    - Snow does not occur frequently in California, and it is not correlated with latitude, longitude, elevation, or temperature
    - Higher volume of precipitation tends to occur in areas with approximately 38-39° latitude and 120° longitude
    - Higher volume of precipitation tends not to occur when the minimum temperature is greater than 60°F
+
 _Set of Graphs for Latitude vs Minimum Temperature:_
    - The correlation between elevation and minimum temperature is somewhat obvious where data is aggregated in some climate zones like zone 16, while in other zones the correlation is less obvious where data is widely scattered on the plot.
    - It can be roughly concluded that the minimum temperature is lower in the further north and the temperature variation is also more drastic in further north in California.
+
 _Set of Graphs for Elevation vs Minimum Temperature:_
    - The correlation between elevation temperature is more obvious: higher the elevation, lower the temperature. Paired with the last correlation, we can conclude that  elevation and latitude doesn’t necessarily correlate with each other.
    - The data is scattered unevenly on the scatterplot: most climate zones have a similar elevation Since California is mainly flat, except for some hilly counties in the north. For example, climate zone spans from the north end to the midsouth part and the average minimum temperature is thus lower. 
+
 _Set of Graphs for Elevation vs Precipitation:_
    - The correlation between elevation and precipitation is somewhat unobvious. We can roughly conclude that more north of california tends to have more trends towards rain, but there are also moderate amount of rain in lower elevation where the majority of California sit at. 
    - There’s no definite answer to this correlation: humidity and might be a better hint in terms of precipitation. Since the autumn season data is missing, a full dataset of all weather stations in california for all days of the year is needed to make more detailed conclusions.
